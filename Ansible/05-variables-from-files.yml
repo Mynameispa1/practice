@@ -1,0 +1,13 @@
+---
+- name: Task level variable
+  hosts: localhost
+  become: yes
+  vars_files:
+  - variables.yml
+  tasks:
+    - name: Task level play
+      ansible.builtin.debug:
+        msg: "I am learing {{Course}}, and trainer is {{Trainer}}, and the duration is {{Duration}}" 
+
+
+      
