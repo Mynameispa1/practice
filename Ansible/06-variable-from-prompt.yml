@@ -10,7 +10,6 @@
   - name: PASSWORD
     prompt: Please enter the password
     private: true
-
   tasks:
    - name: print and check values
      anisble.builtin.debug:
