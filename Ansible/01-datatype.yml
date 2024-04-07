@@ -14,13 +14,13 @@
   tasks:
     - name: print key value pair
       ansible.builtin.debug:
-       msg: "Name is key value pair"
+       msg: "{{Name}} is key value pair"
     - name: print list
       ansible.builtin.debug:
-       msg: "Skills is a list"
+       msg: "{{Skills}} is a list"
     - name: print map
       ansible.builtin.debug:
-       msg: "Experience is a map"      
+       msg: "{{Experience}} is a map"      
     
 
 
