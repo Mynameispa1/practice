@@ -1,5 +1,5 @@
 ---
-- name: Task level variable
+- name: variable level variable
   hosts: localhost
   become: yes
   vars_files:

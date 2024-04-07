@@ -1,0 +1,18 @@
+---
+- name: variables from prompt
+  hosts: localhost
+  become: yes
+  vars_prompt:
+  - name: USERNAME
+    prompt: Please enter the username
+    private: false
+
+  - name: PASSWORD
+    prompt: Please enter the password
+    private: true
+
+  tasks:
+  - name: print and check values
+    anisble.builtin.debug:
+     msg: "username is {{USERNAME}} and the password is {{PASSWORD}}"
+   
