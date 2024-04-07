@@ -1,5 +1,5 @@
 ---
-- name: Play level Variable
+- name: Read Variable from inventory
   hosts: localhost
   become: yes 
   tasks:
