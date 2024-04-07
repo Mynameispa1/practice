@@ -11,7 +11,7 @@
      AWS: 5
      Ansible: 4
     Trainer: true #boolean
-   tasks:
+  tasks:
     - name: print key value pair
       ansible.builtin.debug:
        msg: "Name is key value pair"
