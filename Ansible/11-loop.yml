@@ -5,10 +5,10 @@
   tasks:
   - name: print persons
     ansible.builtin.debug:
-     msg: "Hello {{Items}}"
+     msg: "Hello {{item}}"
     loop:
     - Pavan
     - Kumar
     - Muvva
-     
+
    
