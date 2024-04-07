@@ -10,6 +10,11 @@
 
   - name: print variable value
     ansible.builtin.debug:
-     msg: " value is {{user}}"  
+     msg: "User output is {{user}}"  
+
+  - name: print exist status or return code
+    ansible.builtin.debug:
+     msg: "status is {{user.rc}}"
+       
 
 
