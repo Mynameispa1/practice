@@ -12,7 +12,7 @@
     private: true
 
   tasks:
-  - name: print and check values
-    anisble.builtin.debug:
-     msg: "username is {{USERNAME}} and the password is {{PASSWORD}}"
+   - name: print and check values
+     anisble.builtin.debug:
+      msg: "username is {{USERNAME}} and the password is {{PASSWORD}}"
    
