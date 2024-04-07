@@ -9,4 +9,4 @@
   tasks:
    - name: Check Variables
      ansible.builtin.debug:
-      msg: "I am learing {{Course}}, trainer is {{Trainer}}, and the duration is "Duration"
+      msg: "I am learing {{Course}}, trainer is {{Trainer}}, and the duration is {{Duration}}"
