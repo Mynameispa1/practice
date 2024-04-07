@@ -1,0 +1,5 @@
+- name: My first play book
+  hosts: localhost
+  tasks:
+   - name: Ping the server
+     ansible.builtin.ping:
