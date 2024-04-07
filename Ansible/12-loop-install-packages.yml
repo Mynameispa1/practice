@@ -5,13 +5,13 @@
   tasks:
   - name: Install packages
     ansible.builtin.package:
-     name: "{{item}}" # item is default keyword
-     state: present 
+     name: "{{item.name}}" # item is default keyword
+     state: "{{item.state}}"
     loop:
-    - nginx
-    - mysql
-    - postfix
-    - git
-
+    - {name: 'git' state: 'present'}
+    - {name: 'mysql' state: 'absent'}
+    - {name: 'nginx' state: 'present'}
+    - {name: 'postfix' state: 'absent'}
+    
 
    
